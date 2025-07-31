@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devang Bhattad - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Devang</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="profile-section">
+                <div class="profile-pic-container">
+                    <img id="profilePic" class="profile-pic" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='100' fill='%2333808D'/%3E%3Ctext x='100' y='110' text-anchor='middle' fill='white' font-size='60' font-family='sans-serif'%3EDB%3C/text%3E%3C/svg%3E" alt="Profile Picture">
+                    <div class="profile-pic-overlay">
+                        <span>Click to Upload</span>
+                    </div>
+                    <div class="loading-spinner hidden" id="profileLoader"></div>
+                </div>
+                <input type="file" id="profilePicInput" accept="image/*" class="hidden">
+            </div>
+            <h1 class="hero-title">Devang Bhattad</h1>
+            <p class="hero-subtitle">UI/UX Designer & Automation Enthusiast</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/devang-bhattad-59a40b27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                    <span class="social-icon">💼</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Devang24Hub" target="_blank" class="social-link">
+                    <span class="social-icon">💻</span>
+                    GitHub
+                </a>
+                <a href="https://wa.me/qr/AKLJADKSUQFHB1" target="_blank" class="social-link">
+                    <span class="social-icon">💬</span>
+                    WhatsApp
+                </a>
+                <a href="https://www.instagram.com/devangbhattad?igsh=cnFucGIycHNjdzNi" target="_blank" class="social-link">
+                    <span class="social-icon">📷</span>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <div class="card__body">
+                    <p>Passionate about seamless digital experiences, I blend design thinking with automation to deliver efficient, delightful solutions. Always eager for new challenges and meaningful collaborations in UI/UX and automation.</p>
+                    <p>My journey spans across frontend development, user interface design, and process automation, allowing me to deliver comprehensive solutions that not only look great but also work seamlessly behind the scenes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-grid">
+                <div class="card experience-card">
+                    <div class="card__body">
+                        <h3>UI/UX Design Intern</h3>
+                        <h4>Digitattva Solutions</h4>
+                        <p class="period">Jun 2024 – Aug 2024</p>
+                        <p>Led redesigns for client dashboards, implemented modern component libraries, and streamlined prototyping with Figma.</p>
+                    </div>
+                </div>
+                <div class="card experience-card">
+                    <div class="card__body">
+                        <h3>Frontend Developer</h3>
+                        <h4>ESDS Software Solutions</h4>
+                        <p class="period">Jan 2024 – Jun 2024</p>
+                        <p>Built responsive UIs, optimized asset delivery, and collaborated with backend for data-driven workflows.</p>
+                    </div>
+                </div>
+                <div class="card experience-card">
+                    <div class="card__body">
+                        <h3>Automation Intern</h3>
+                        <h4>Cyber Sanskar</h4>
+                        <p class="period">Jun 2023 – Dec 2023</p>
+                        <p>Automated repetitive business processes using n8n, reduced manual work by 30% through intelligent workflow design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+            
+            <div class="skills-category">
+                <h3 class="category-title">Design Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1753998868/pplx_project_search_images/dc4cfe3ac11096ce42e5bb1d5ac2f917a34594a1.jpg" alt="Figma" class="skill-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="skill-logo-placeholder figma" style="display: none;">Figma</div>
+                        <span class="skill-name">Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1753998974/pplx_project_search_images/eb3a246e06abd09845e2bf08395b552d54732fb1.jpg" alt="Adobe XD" class="skill-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="skill-logo-placeholder adobe-xd" style="display: none;">XD</div>
+                        <span class="skill-name">Adobe XD</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748937806/pplx_project_search_images/2ea9f104c35f21a36430711956e6dfd3ab843f86.jpg" alt="Canva" class="skill-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="skill-logo-placeholder canva" style="display: none;">Canva</div>
+                        <span class="skill-name">Canva</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder drawio">Draw.io</div>
+                        <span class="skill-name">Draw.io</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder visily">Visily</div>
+                        <span class="skill-name">Visily</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder html5">HTML5</div>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder css3">CSS3</div>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder js">JS</div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder react">React</div>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder mysql">MySQL</div>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder git">Git</div>
+                        <span class="skill-name">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Automation & AI Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item featured-skill">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748600336/pplx_project_search_images/828e5049bf439ba22e02e0d566dcf46494a6b617.jpg" alt="n8n" class="skill-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="skill-logo-placeholder n8n" style="display: none;">n8n</div>
+                        <span class="skill-name">n8n</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder chatgpt">ChatGPT</div>
+                        <span class="skill-name">ChatGPT</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo-placeholder perplexity">Perplexity</div>
+                        <span class="skill-name">Perplexity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="card certification-card">
+                    <div class="card__body">
+                        <h3>Google UI/UX Foundation</h3>
+                        <h4>Coursera</h4>
+                        <p class="cert-type">Professional Certificate</p>
+                        <div class="cert-badge">🎓</div>
+                    </div>
+                </div>
+                <div class="card certification-card">
+                    <div class="card__body">
+                        <h3>Digital Marketing</h3>
+                        <h4>Google Garage / Digital Scholar</h4>
+                        <p class="cert-type">Certification</p>
+                        <div class="cert-badge">📊</div>
+                    </div>
+                </div>
+                <div class="card certification-card">
+                    <div class="card__body">
+                        <h3>Programming (C, C++, Java, HTML, CSS)</h3>
+                        <h4>Infosys Springboard</h4>
+                        <p class="cert-type">Course Completion</p>
+                        <div class="cert-badge">💻</div>
+                    </div>
+                </div>
+                <div class="card certification-card">
+                    <div class="card__body">
+                        <h3>Python & Live Streaming</h3>
+                        <h4>Udemy</h4>
+                        <p class="cert-type">Course Certificate</p>
+                        <div class="cert-badge">🐍</div>
+                    </div>
+                </div>
+                <div class="card certification-card">
+                    <div class="card__body">
+                        <h3>Prompt Engineering</h3>
+                        <h4>Self-learned / Practical</h4>
+                        <p class="cert-type">Skill Development</p>
+                        <div class="cert-badge">🤖</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card__body">
+                        <h3>NGO Connect</h3>
+                        <p>Platform for NGOs to connect and manage resources</p>
+                        <a href="#" class="btn btn--primary project-link" onclick="event.preventDefault(); app.showToast('Project demo coming soon!', 'info');">View Project</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="card__body">
+                        <h3>CustomIt</h3>
+                        <p>E-commerce customization tool</p>
+                        <a href="#" class="btn btn--primary project-link" onclick="event.preventDefault(); app.showToast('Project demo coming soon!', 'info');">View Project</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="card__body">
+                        <h3>Holistic Fraud Management System</h3>
+                        <p>Automated monitoring using n8n</p>
+                        <a href="#" class="btn btn--primary project-link" onclick="event.preventDefault(); app.showToast('Project demo coming soon!', 'info');">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Media Gallery</h2>
+            <div class="gallery-upload">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📁</div>
+                        <p>Drag & drop photos and videos here</p>
+                        <p>or <button type="button" class="btn btn--secondary" id="selectFilesBtn">Select Files</button></p>
+                        <small>Supports: JPG, PNG, GIF, WebP, MP4, MOV, WebM</small>
+                    </div>
+                    <div class="loading-spinner hidden" id="galleryLoader"></div>
+                </div>
+                <input type="file" id="mediaInput" multiple accept="image/*,video/*" class="hidden">
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Media items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-section">
+                <div class="card">
+                    <div class="card__body">
+                        <div class="resume-upload">
+                            <input type="file" id="resumeInput" accept=".pdf" class="hidden">
+                            <button type="button" class="btn btn--primary" id="uploadResumeBtn">Upload Resume (PDF)</button>
+                            <div class="loading-spinner hidden" id="resumeLoader"></div>
+                            <div class="resume-info" id="resumeInfo" style="display: none;">
+                                <div class="resume-filename" id="resumeFilename"></div>
+                                <div class="resume-actions">
+                                    <button type="button" class="btn btn--secondary" id="viewResumeBtn">View Resume</button>
+                                    <button type="button" class="btn btn--outline" id="downloadResumeBtn">Download</button>
+                                    <button type="button" class="btn btn--outline delete-btn" id="deleteResumeBtn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Let's connect and discuss opportunities!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/devang-bhattad-59a40b27b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                        <span class="social-icon">💼</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Devang24Hub" target="_blank" class="social-link">
+                        <span class="social-icon">💻</span>
+                        GitHub
+                    </a>
+                    <a href="https://wa.me/qr/AKLJADKSUQFHB1" target="_blank" class="social-link">
+                        <span class="social-icon">💬</span>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/devangbhattad?igsh=cnFucGIycHNjdzNi" target="_blank" class="social-link">
+                        <span class="social-icon">📷</span>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Media Viewer -->
+    <div class="modal hidden" id="mediaModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Media content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast hidden" id="toast">
+        <div class="toast-content" id="toastContent"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner large"></div>
+            <p>Loading portfolio data...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
